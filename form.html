@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario BYmyCAR Madrid</title>
+
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/custom/styles.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#262626">
+</head>
+<body>
+   
+<form>
+    <div class="container mt-4" style="max-width: 750px;">
+        <div class="row">
+            <img class="img-fluid" src="https://forms.bymycar.madrid/root/imagenes/0/0/1/1/newi7email-1.jpg" alt="banner-bmw">
+        </div>
+        <div class="col-md mt-3">
+            <h1>Título del formulario</h1>
+            <h2>Subtítulo del formulario</h2>
+        </div>
+        <div class="row align-items-center mt-4">
+            <div class="col-md mb-3">
+                <select class="form-select" aria-label="Default select example">
+                    <option value="SR">Sr.</option>
+                    <option value="SRA">Sra.</option>
+                  </select>
+            </div>
+            <div class="col-md mb-3">
+                <input type="text" class="form-control" id="name" placeholder="Nombre" required>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md mb-3">
+                <input type="text" class="form-control" id="lastname" placeholder="Primer apellido" required>
+            </div>
+            <div class="col-md mb-3">
+                <input type="text" class="form-control" id="second-lastname" placeholder="Segundo apellido" required>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md mb-3">
+                <input type="email" class="form-control" id="email" placeholder="Correo electrónico" required>
+            </div>
+            <div class="col-md mb-3">
+                <input type="tel" class="form-control" id="tel" placeholder="Teléfono" required>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md form-check legal">
+                <input type="checkbox" class="form-check-input" id="legalCheck1">
+                <label class="form-check-label" for="exampleCheck1">Quiero recibir de BYmyCAR Madrid comunicaciones comerciales por e-mail, correo ordinario, teléfono o servicios de mensajería, o a través de los sistemas de comunicación del vehículo (si los tiene). <a data-bs-toggle="collapse" href="#moreinfo1" role="button" aria-expanded="false" aria-controls="moreinfo1">+</a></label>
+                <div class="collapse" id="moreinfo1">
+                    <div class="card card-body">
+                        Acepto que BYmyCAR Madrid (Avenida Burgos, 133 Madrid ) pueda tratar y utilizar los datos personales que he facilitado (como mis datos de contacto y detalles personales tales como fecha de nacimiento y tipo de carnet de conducir, aficiones e intereses) con las finalidades de atención al cliente, transmitirme información seleccionada sobre productos y servicios del Grupo BMW y para realizar estudios de mercado. BYmyCAR Madrid podrá también transmitir esos datos a determinadas entidades, que los utilizarán para contactar conmigo con las finalidades indicadas. Las actualizaciones de dichos datos podrán compartirse entre las entidades indicadas.
+                    </div>
+                </div>
+            </div>
+            <div id="legalBox1" class="legal mt-2">
+                <label for="contactChannel">Canal de contacto preferido:</label>
+                <select class="form-select" aria-label="Canal de contacto preferido" id="contactChannel">
+                    <option value="1">Correo electrónico</option>
+                    <option value="2">Correo ordinario</option>
+                    <option value="3">Teléfono / Servicios de mensajería</option>
+                    <option value="3">Sistemas de comunicación del vehículo (si los tiene)</option>
+                </select>
+                <div class="col-md mt-2 form-check legal">
+                    <input type="checkbox" class="form-check-input" id="legalCheck3">
+                    <label class="form-check-label" for="legalCheck3">También quiero recibir ofertas personalizadas de productos y servicios que BYmyCAR Madrid pueda determinar en función de mi comportamiento y mis preferencias personales, así como del uso que hago de los productos o servicios. <a data-bs-toggle="collapse" href="#moreinfo3" role="button" aria-expanded="false" aria-controls="moreinfo3">+</a></label>
+                </div>
+                <div class="collapse" id="moreinfo3">
+                    <div class="card card-body">
+                        Acepto que mis datos personales puedan utilizarse para elaborar perfiles individualizados de cliente mediante procedimientos estadísticos. Como resultado de este proceso de elaboración de perfiles, recibiré comunicaciones de marketing con contenidos relacionados con la automoción que podrían interesarme, como ofertas personalizadas de BYmyCAR Madrid y de determinadas entidades. Acepto también que los datos de mi perfil de cliente puedan transmitirse por BYmyCAR Madrid a determinadas entidades y que estas empresas puedan contactarme con contenidos relevantes para mí. En caso de estar disponibles, podrán incorporarse a los perfiles que se elaboren acerca de mí los datos que se detallan a continuación, que puedo haber facilitado personalmente o pueden haberse generado durante mi utilización de los productos y servicios de BYmyCAR Madrid y de determinadas entidades: datos de contacto (como el nombre, el concesionario preferido, las aficiones); datos de identificación (como el número de cliente o el número de contrato); historial del cliente (como la recepción de ofertas, los datos de compra del vehículo o los datos del concesionario); datos del vehículo (como los datos de uso de la app BMW Connected: kilometraje, autonomía de crucero); datos de apps, webs o redes sociales (como los datos de uso de las cuentas online myBMW o myMINI). En este enlace se muestra una lista exhaustiva de los datos de dichas categorías.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md form-check legal">
+                <input type="checkbox" class="form-check-input" id="legalCheck2">
+                <label class="form-check-label" for="legalCheck2">Acepto que BYmyCAR Madrid pueda transferir mis datos a BMW Ibérica (BMW Ibérica, S.A.U. Avda. de Burgos, nº 118. C.P. 28050, Madrid) y que BMW Ibérica pueda tratar y utilizar mis datos y contactarme con las finalidades mencionadas, así como para realizar estudios de mercado. BMW Ibérica podrá también transmitir esos datos a determinadas entidades del Grupo BMW así como a algunos concesionarios o talleres autorizados y demás entidades colaboradoras (tales como el concesionario que haya identificado como preferido, las entidades colaboradoras que hayan intervenido en el proceso de compra de mi vehículo, en su revisión o reparación o que me han prestado asesoramiento al efecto o el concesionario más cercano a mi domicilio) que los utilizarán para contactar conmigo con las finalidades indicadas. Las actualizaciones de dichos datos podrán compartirse entre las entidades indicadas.</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md mt-2 legal">
+                <label>Solicitudes de modificación de la declaración de consentimiento y derecho de revocación. <a data-bs-toggle="collapse" href="#moreinfo2" role="button" aria-expanded="false" aria-controls="moreinfo2">+</a></label>
+                  <div class="collapse" id="moreinfo2">
+                    <div class="card card-body">
+                        <p>Puede revocar en cualquier momento, con efecto inmediato, el consentimiento que ha manifestado. Tras dicha revocación, finalizaremos el tratamiento de su perfil de cliente y no recibiría nuevas comunicaciones comerciales. A través de los canales de comunicación que se indican a continuación, puede solicitar también que le informen sobre los datos personales que acerca de usted conservan BYmyCAR Madrid o BMW Ibérica, así como corregir dichos datos, borrarlos o limitar su tratamiento. Para más información sobre el tratamiento de sus datos personales y sus derechos, véanse las siguientes Políticas Informativas de Protección de Datos:</p>
+
+                        <p>Para contactar con BYmyCAR Madrid:</p>
+                         <ul>
+                            <li><a href="tel:+34913351900">913 351 900</a></li>
+                            <li><a href="mailto:bmw.madrid@bymycar.es">bmw.madrid@bymycar.es</a></li>
+                        </ul>
+                        <p>Para contactar con el servicio de Atención al Cliente de BMW:</p>
+                        <ul>
+                            <li><a href="tel:+34900357902">900 357 902</a></li>
+                            <li><a href="mailto:rclientes@bmw.es">rclientes@bmw.es</a></li>
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md" style="display: grid;">
+                <button type="submit" class="btn btn-primary btm-bmw">Enviar</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<div class="container send-form-alert">
+    <div class="row">
+        <div class="col">
+            <div id="alert-success" class="alert alert-success" role="alert">
+                <span>&#10003;</span> Formulario recibido correctamente.
+            </div>
+            <div id="alert-error" class="alert alert-danger" role="alert">
+                <span>&#215;</span> Ha habido un error al enviar el formulario.
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/custom/scripts.js"></script>
+
+</body>
+</html>
