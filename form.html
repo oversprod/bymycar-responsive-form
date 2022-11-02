@@ -37,34 +37,47 @@
             <img class="img-fluid" src="https://forms.bymycar.madrid/root/imagenes/0/0/1/1/newi7email-1.jpg" alt="banner-bmw">
         </div>
         <div class="col-md mt-3">
-            <h1>Título del formulario</h1>
-            <h2>Subtítulo del formulario</h2>
+            <h1 id="formTitle">Título del formulario</h1>
+            <h2 id="formSubtitle">Subtítulo del formulario</h2>
+            <p id="formDescription" class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod risus nec ligula dignissim, vitae scelerisque sapien porttitor. Quisque est neque, auctor sit amet leo at, viverra aliquam quam. Quisque ac tellus quis ex pretium suscipit vel eu orci. Curabitur ultrices, libero eu commodo consequat, lorem sapien tincidunt erat, ac maximus leo orci et magna. Pellentesque cursus nunc eget enim aliquet, ac facilisis purus consectetur. Cras cursus tortor sit amet viverra viverra. Vivamus sed semper enim. Morbi dignissim volutpat lorem, eget varius ipsum vulputate sed.</p>
         </div>
         <div class="row align-items-center mt-4">
             <div class="col-md mb-3">
-                <select class="form-select" aria-label="Default select example">
+                <label for="formGender" class="form-label">Género</label>
+                <select id="formGender" class="form-select" aria-label="Default select example">
                     <option value="SR">Sr.</option>
                     <option value="SRA">Sra.</option>
                   </select>
+                <div id="genderHelp" class="form-text">Selecciona un género de la lista.</div>
             </div>
             <div class="col-md mb-3">
-                <input type="text" class="form-control" id="name" placeholder="Nombre" required>
-            </div>
-        </div>
-        <div class="row align-items-center">
-            <div class="col-md mb-3">
-                <input type="text" class="form-control" id="lastname" placeholder="Primer apellido" required>
-            </div>
-            <div class="col-md mb-3">
-                <input type="text" class="form-control" id="second-lastname" placeholder="Segundo apellido" required>
+                <label for="formName" class="form-label">Nombre:</label>
+                <input id="formName" type="text" class="form-control" id="name" required>
+                <div id="nameHelp" class="form-text">Introduce tu nombre.</div>
             </div>
         </div>
         <div class="row align-items-center">
             <div class="col-md mb-3">
-                <input type="email" class="form-control" id="email" placeholder="Correo electrónico" required>
+                <label for="formFirstLastname" class="form-label">Primer apellido:</label>
+                <input id="formFirstLastname" type="text" class="form-control" id="lastname" required>
+                <div id="lastnameHelp" class="form-text">Introduce tu primer apellido.</div>
             </div>
             <div class="col-md mb-3">
-                <input type="tel" class="form-control" id="tel" placeholder="Teléfono" required>
+                <label for="formSecondLastname" class="form-label">Segundo apellido:</label>
+                <input id="formSecondLastname" type="text" class="form-control" id="second-lastname"  required>
+                <div id="secondLastnameHelp" class="form-text">Introduce tu primer apellido.</div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md mb-3">
+                <label for="formEmail" class="form-label">Correo electrónico:</label>
+                <input id="formEmail" type="email" class="form-control" id="email" required>
+                <div id="emailHelp" class="form-text">Introduce una dirección de correo electrónico válida.</div>
+            </div>
+            <div class="col-md mb-3">
+                <label for="formTel" class="form-label">Teléfono:</label>
+                <input id="formTel" type="tel" class="form-control" id="tel" required>
+                <div id="telHelp" class="form-text">Introduce un número de teléfono válido.</div>
             </div>
         </div>
         <div class="row mt-2">
